@@ -1,0 +1,20 @@
+from pathlib import Path
+
+ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+DIGITS = "0123456789"
+PLATE_WIDTH = 520
+PLATE_HEIGHT = 110
+CHAR_SIZE = (32, 32)
+SEED = 42
+TRAIN_SAMPLES_PER_CLASS = 100
+TEST_SAMPLES_PER_CLASS = 20
+PLATE_COUNT = 120
+LEGACY_PROBABILITY = 0.25
+PLATE_ASPECT_RATIO = PLATE_WIDTH / PLATE_HEIGHT
+DEFAULT_MODEL_PATH = Path("models/svm_plate.joblib")
+EXAMPLES_MANIFEST = Path("examples/manifest.csv")
+FONT_CANDIDATES = (
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+)

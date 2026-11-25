@@ -18,3 +18,7 @@ venv/
 !car1.jpg
 !examples/
 !examples/**
+
+# Entraînement
+data/
+models/*.joblib
